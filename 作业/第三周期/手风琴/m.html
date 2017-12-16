@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>手风琴</title>
+	<style type="text/css">
+		ul{
+			width: 900px;
+			height: 420px;
+			margin: 0,auto;
+			
+		}
+		li{
+			width: 100px;
+			height: 420px;
+			float: left;
+			overflow: hidden;
+			position: relative;
+		}
+		img{
+			position: absolute;
+			left: -300px;
+		}
+		.mask{
+			width: 100px;
+			height: 420px;
+			background-color: rgba(0,0,0,0.25);
+			position: relative;
+		}
+		p{
+			display: block;
+			font-size: 15px;
+			width: 16px;
+			color: white;
+            z-index: 10;
+            opacity: 1;
+            margin: 0,auto;
+            position: absolute;
+            top: 100px;
+            left: 20px;
+
+		}
+        
+        ul *{transition-timing-function: linear;
+              transition-duration: 0.5s;
+        	 }
+        
+		.big{
+			width: 600px;
+		}
+		.big img{
+			position: absolute;
+			left:0px;
+		}
+
+	</style>
+</head>
+<link rel="stylesheet" type="text/css" href="./css./d.css">
+<body>
+    <div class="container" >
+    	<ul id="ul">
+    		<li>
+    			<img src="./img./a1.png">
+    			<div class="mask">
+    				<p>窗前明月光</p>
+    			</div>
+    		</li>
+    		<li>
+    			<img src="./img./a2.png">
+    			<div class="mask">
+    				<p>疑是地上霜</p>
+    			</div>
+    		</li>
+    		<li class="big">
+    			<img src="./img./a3.png">
+    			<div class="mask">
+    				<p>举头望明月</p>
+    			</div>
+    		</li>
+    		<li >
+    			<img src="./img./a4.png">
+    			<div class="mask">
+    				<p>低头思故乡</p>
+    			</div>
+    		</li>
+    	</ul>
+    </div>
+    <script type="text/javascript">
+    	function bind(el,eventType,callback){
+            el.addEventListener(eventType,callback);
+    	}
+    	function mouseoverhand(e){
+    		var target=e.target;
+    		var ul=document.getElementById("ul");
+    		var li=document.getElementsByTagName("li");
+    		for(var i=0; i<li.length;i++){
+    			li[i].className='';
+    		}
+    		while(target.tagName!='LI'||target.tagName=='BODY'){
+    			target=target.parentNode;
+    		}
+    		target.className='big';
+    	}
+    	function initList(){
+    		var ul=document.getElementById("ul");
+    		var li=document.getElementsByTagName("li");
+    		for(var i=0; i<li.length; i++){
+    		bind(li[i],'mouseover',mouseoverhand )
+            }
+    	}
+    	initList()
+
+
+    	/*var ul=document.getElementById("ul");
+        var li=document.getElementByTagName("li");
+    	li.onmouseover=function(e){
+            move()
+	    }
+    	function move(e){
+    		var target=e.target;
+    		for(var i=0; i<li.length;i++){
+    			li[i].className='';
+    		}
+    		white(target.tagName!='LI'||target.tagName=='BODY'){
+    			target=target.parentNode;
+    		}
+    		target.className='big'
+
+    	}*/
+    </script>
+</body>
+</html>

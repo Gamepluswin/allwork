@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+body{background-color: rgb(51,51,51);}
+.container{
+	width: 419px;
+	height: 356px;
+}	
+.top{
+	height: 195px;   
+}	
+.play{
+	transition: width 0.8s,height 0.8s,transform 0.8s; 
+	position: absolute;
+	left: 115px;
+	top: 40px;
+}
+.play:hover{
+    transform: rotate(360deg);
+    width: 200px;
+}
+.down{
+	height: 161px;
+	background-image: url(./images/I9C]JC}MKZB1[YDT28X[BOJ.png);
+	background-repeat: no-repeat;
+	background-position: 0px -170px;
+	position: relative;
+}
+span{
+	display: block;
+	position: absolute;	
+	width:1px;
+	height: 1px;
+	background-color: rgb(51,51,51);
+}
+.down:hover{
+	cursor: pointer;
+}
+.one{
+	left: 50px;
+    top: 47px;
+	transition-duration: 0.5s;   
+}
+.down:hover .one{
+	width: 30px;
+	left: 120px;
+	background-color: white;
+}	
+
+.two{
+    left: 117px;
+    top: 140px;
+    transition-duration: 0.5s;
+}
+.down:hover .two{
+	height: 30px;
+	top: 65px;
+	background-color: white;
+}
+.three{
+	left: 350px;
+	top: 95px;
+	transition-duration: 0.5s;
+}
+.down:hover .three{
+	width: 30px;
+	left: 265px;
+	background-color: white;
+}
+.four{
+	left: 295px;
+	top: -20px;
+	transition-duration: 0.5s;
+}
+.down:hover .four{
+	height: 30px;
+	top: 50px;
+	background-color: white;
+}	
+	</style>
+</head>
+<body>
+<div class="container">
+	<div class="top">
+		<img src="./images/mission.png" class="play">
+	</div>
+	<div class="down">
+		<span class="one"></span>
+		<span class="two"></span>
+		<span class="three"></span>
+		<span class="four"></span>
+	</div>
+</div>
+</body>
+</html>

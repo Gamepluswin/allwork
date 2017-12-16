@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+    <div class="box">
+    	<canvas id="canvas" style="border: 1px solid gray ;display: block;float: left;">
+    		当前浏览器不支持canvas
+    	</canvas>
+    	<img src="./img./sign-left-icon.png" style="width: 60px;height: 60px;cursor: pointer;float: left;" id="left">
+    	<img src="./img./5.png" style="width: 60px;height: 60px;cursor: pointer;float: left;" id="center">
+    	<img src="./img./sign-right-icon.png" style="width: 60px;height: 60px;cursor: pointer;float: left;" id="right">
+    	<button id="bottom" style="width: 80px;height: 60px;background-color: rgb(0,162,232);cursor: pointer;float: left;">飞出小块</button>
+
+    </div>
+    <script type="text/javascript">
+    	var canvas=document.getElementById("canvas");
+    	canvas.width=800;
+	    canvas.height=600;
+	    if (canvas.getContext("2d")) {
+	    	var context=canvas.getContext("2d")
+	    }
+	    else{
+		    alert("当前浏览器不支持canvas")
+	    }
+	    context.beginPath();
+            context.moveTo(400,300);
+            context.lineTo(450,300);
+            context.lineWidth=20;
+            context.strokeStyle="rgb(0,91,230)"             
+            //context.stroke();
+            context.closePath();
+
+            
+            context.beginPath();
+		    context.arc(400,300,30,0,2*Math.PI,false)
+		    context.fillStyle="rgb(0,255,255)";
+		    context.lineWidth=0;
+		    context.fill();
+		    context.stroke();
+		    context.closePath();
+		
+
+
+		var score=0;
+        var time;
+		var ball=[];
+		var op=false;
+        var i=0;//角度
+        var box={boxx:0,boxv:0.5,boxy:0};
+	    var left=document.getElementById("left");
+	    var right=document.getElementById("right");
+	    var center=document.getElementById("center");
+	    var bottom=document.getElementById("bottom");
+	    left.onmousedown=function(){
+            leftfun()
+	    }
+        bottom.onmousedown=function(){
+            bottomfun()
+	    }
+	    right.onmousedown=function(){
+            rightfun()
+	    }
+	    center.onmousedown=function(){
+            addfun();
+            
+	    } 
+	    window.onload=function(){
+	    	update();
+	    }
+	    function update(){
+            
+	    	var time=setInterval(function all(){
+	    	    context.clearRect(0,0,canvas.width,canvas.height);
+	    	    updateball();
+	    	    if (op==true) {
+	    	    	updatebox();
+	    	    }
+	    	    for(var i=0;i<ball.length;i++){	    	 
+	                if (box.boxx<ball[i].x&&ball[i].x<box.boxx+20&&box.boxy<ball[i].y&&ball[i].y<box.boxy+20) {
+	                            bottomfun();
+	                            score=score+1;
+	                        }
+                 }
+                if (box.boxx>800) {
+            	clearInterval(time);
+            	alert("Game Over,your score="+score);
+            	location.reload();
+                   }
+                },1)
+            
+            
+            
+	    }
+	    function pao(){
+        	context.beginPath();
+            context.moveTo(400,300);
+            context.lineTo(Math.cos(i/180*Math.PI)*50+400,Math.sin(i/180*Math.PI)*50+300);
+            context.lineWidth=20;
+            context.strokeStyle="rgb(0,91,230)"             
+            context.stroke();
+            context.closePath();
+
+            context.beginPath();
+		    context.arc(400,300,30,0,2*Math.PI,false)
+		    context.fillStyle="rgb(0,255,255)";
+		    context.lineWidth=0;
+		    //context.stroke();
+		    context.fill();		    
+		    context.closePath();
+		    
+	    } 
+        function leftfun(){
+        	i=i-30;  
+            context.clearRect(0,0,canvas.width,canvas.height);
+            pao(); 
+        }
+        function rightfun(){
+            i=i+30;           
+            context.clearRect(0,0,canvas.width,canvas.height);
+            pao();
+        }
+        function addfun(){                      
+            var aball/*num[p]*/={x:Math.cos(i/180*Math.PI)*50+400,y:Math.sin(i/180*Math.PI)*50+300,vx:Math.cos(i/180*Math.PI)*5,vy:Math.sin(i/180*Math.PI)*7,g:0.1}
+            ball.push(aball);
+        }
+        function updateball(){   
+            //setInterval(
+                //function boxstart(){
+	                //context.clearRect(0,0,canvas.width,canvas.height);
+
+                    for(var i=0;i<ball.length;i++){
+                        ball[i].x += ball[i].vx;
+	                    ball[i].y +=ball[i].vy;
+	                    ball[i].vy += ball[i].g;
+	                    context.beginPath();
+	                    context.fillStyle="blue";
+	                    context.arc( ball[i].x , ball[i].y , 5 , 0 ,2*Math.PI , true );
+	                    context.fill();
+	                    context.closePath();	
+                    
+	                if (ball[i].y+ball[i].vy<5) {
+	                	ball[i].vy=-ball[i].vy;
+	                }
+	                else if (ball[i].y+ball[i].vy>canvas.height-5) {
+	                	ball[i].vy=-ball[i].vy*0.7;
+	                }
+	                else if (ball[i].x+ball[i].vx<5) {
+	                	ball[i].vx=-ball[i].vx*0.7;
+	                }
+                    else if (ball[i].x+ball[i].vx>canvas.width-5) {
+	                	ball[i].vx=-ball[i].vx*0.7;
+	                }
+	                }	                	
+	                pao();
+	            //}
+            	//,1)
+
+        }
+        function bottomfun(){
+        	op=true;
+        	box.boxx=0;
+        	box.boxy=Math.random();
+        	box.boxy=box.boxy*600;
+        	/*if (0.45<box.boxy<0.55) {box.boxy=box.boxy*400}
+        	else{box.boxy=box.boxy*580}*/	
+        }  	
+        function updatebox(){                                                    
+            box.boxx=box.boxx+box.boxv;
+            context.beginPath();
+            context.rect(box.boxx,box.boxy,20,20);
+            context.fillStyle="red";
+            context.fill();
+            //context.stroke();
+            context.closePath();                    
+            
+            pao(); 	
+        	}
+
+        /*setInterval(function all(){
+        	context.clearRect(0,0,canvas.width,canvas.height);
+
+
+        	context.beginPath();
+            context.moveTo(400,300);
+            context.lineTo(Math.cos(i/180*Math.PI)*50+400,Math.sin(i/180*Math.PI)*50+300);
+            context.lineWidth=20;
+            context.strokeStyle="rgb(0,91,230)"             
+            context.stroke();
+            context.closePath();
+
+            
+            context.beginPath();
+		    context.arc(400,300,30,0,2*Math.PI,false)
+		    context.fillStyle="rgb(0,255,255)";
+		    context.lineWidth=0;
+		    context.fill();
+		    //context.stroke();
+		    context.closePath();
+
+       /* }
+        	,1)*/
+        
+    </script>
+</body>
+</html>

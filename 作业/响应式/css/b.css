@@ -1,0 +1,777 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	/*font-family:sans-serif!important;*/
+}
+.container{
+	width: 100%;
+}
+.welcome{
+	height: 680px;
+	width: 100%;
+	background-image: url(../images/homepage-hero.image.large_2x.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 38%;
+}
+.equal{
+	display: none;
+}
+.header{
+	background-color:black;
+	opacity: 0.8;
+	filter:alpha(opacity=80); 
+	height: 6.5%;
+	width:100%;
+	position: relative;
+}
+.headerul ul{
+	margin: auto;
+	width: 780px;
+}
+.headerul li{
+	width: 130px;
+	float: left;
+	line-height: 45px;
+	text-align: center;
+	font-size: 14px;
+}
+.headerul span{
+	color: white;
+}
+.headerul span:hover{
+	color: grey;
+	cursor: pointer;
+	text-decoration: none;
+}
+.headerul{
+	margin: 0px auto;
+	width: 980px;
+	height: 100%;
+	position: relative;
+}
+.smallappleborder{
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 13px;
+	overflow: hidden;	
+}
+.smallapple{
+	position: relative;
+	top: -3px;
+}
+.smallapple:hover{
+	opacity: 0.65;
+	filter:alpha(opacity=65);
+}
+.search{
+	position:absolute;
+    right: 70px;
+    top: 12px;
+}
+.search:hover{
+	opacity: 0.65;
+	filter:alpha(opacity=65);
+}
+.whitebag{
+	position: absolute;
+	right:0px;
+	top:12px;
+}
+.whitebag:hover{
+    opacity: 0.65;
+    filter:alpha(opacity=65);
+}
+.subhead{
+	width: 980px;
+	height:93.5%;
+	margin: auto;
+	position: relative;
+}
+.subheadhead{
+   height: 8%;
+   width: 100%;
+   position: relative;
+}
+.support{
+   font-size: 20px;
+   color: white;
+   position: absolute;
+   left: 7px;
+   top: 10px;
+}
+.subheadhead a{
+   width:50px; 
+   font-size: 12px;
+   color: white;
+   cursor: pointer;
+}
+.subheadhead a:hover{
+	text-decoration: none;
+	color: rgb(85,196,232);
+	cursor: pointer;
+}
+.group{
+	position: absolute;
+	top:40%;
+	left:90%;
+}
+.link{
+	position: absolute;
+	top: 40%;
+	left:95%;
+}
+.cb{
+	display: none;
+}
+.subheaddown{
+	height: 92%
+}
+h1{
+	position: absolute;
+	top: 20%;
+	left: 31%;
+	font-size:40px;
+    color: white;
+    letter-spacing: 5px;
+}
+.subheaddown p{
+	font-size: 20px;
+	position: absolute;
+	top: 30%;
+	left: 41%;
+	color: white;
+}
+.input{
+	border-radius: 3px;
+	width: 60%;
+	height: 45px;
+	position: absolute;
+	top:40%;
+	left: 20%;
+	font-size: 20px;
+	background-image: url(../images/fangbai6104638.png);
+	background-repeat: no-repeat;
+	background-size: 24px 24px;
+	background-position: 5px 11px;
+	display: block;
+	outline: none;
+	padding-left: 36px;
+	line-height: 45px;
+}
+input::-webkit-input-placeholder { /* WebKit browsers */ 
+font-size:18px;
+color: rgb(136,136,136);
+} 
+input::-moz-placeholder { /* Mozilla Firefox 4 to 18 */ 
+font-size:18px;
+color: rgb(136,136,136);
+} 
+input::-moz-placeholder { /* Mozilla Firefox 19+ */ 
+font-size:18px;
+color: rgb(136,136,136);
+} 
+input::-ms-input-placeholder { /* Internet Explorer 10+ */ 
+font-size:18px;
+color: rgb(136,136,136);
+}
+
+.know{
+	height: 300px;
+	width: 100%;
+	position: relative;
+}
+.know h2{
+	font-size: 37px;;
+    position: absolute;
+	top: 15%;
+	left: 40%;
+    color: black;
+    letter-spacing: 3px;
+}
+.know ul{
+	width: 980px;
+	height: 50%;
+	margin: auto;
+	position: relative;
+	top:40%;
+	display: block;
+}
+.know ul li{
+	width: 100px;
+	height: 100%;
+	display: block;
+	float: left;
+	margin-right:62px;
+	position: relative;
+}
+.know ul .itunes{
+	margin-right: 0px;
+}
+.know ul li img{
+	display: block;
+	margin: auto;
+	height: 65px;
+	width: 65px;
+	/*position:absolute;
+	left: 18%;
+	top:10%; */
+}
+.know ul li p{
+	font-size: 15px;
+	text-align: center;
+	color: black;
+    position: relative;
+	top: 20%
+}
+.know ul li:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+.unfold{
+	text-align: center;
+	height: 70px;
+	line-height: 70px;
+	color: rgb(39,118,152);
+	font-size: 15px;
+}
+.unfold span:hover{
+	cursor: pointer;
+}
+.news{
+	height: 360px;
+	width: 100%;
+	position: relative;
+}
+.newscenter{
+	width: 818px;
+	margin: auto;
+}
+.newsup{
+	width:410px;
+	height: 100%;
+	position: relative; 
+}
+.newsup h2{
+	font-size: 34px;
+	letter-spacing: 2px;
+	color: black;
+	position: absolute;
+	top: 35px;
+}
+.newsup p{
+	position: absolute;
+	top: 100px;
+	font-size: 19px;
+	line-height: 35px;
+}
+.newscenter img{
+	width: 410px;
+	height: auto;
+	float: right;
+	position: relative;
+	top:40px;
+}
+.newsup h3{
+	font-size: 21px;
+	color: rgb(39,118,152);
+	position: absolute;
+	top: 250px;
+}
+.newsup h3:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+.newsup h4{
+	font-size: 21px;
+	color: rgb(39,118,152);
+	position: absolute;
+	top: 290px;
+}
+.newsup h4:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+.service{
+	width: 100%;
+	height: 680px;
+}
+.servicecenter{
+	width: 980px;
+	height: 100%;
+	margin:auto;
+}
+.servicetop{
+	height: 430px;
+}
+.learn{
+	width: 480px;
+	float: left;
+	position: relative;
+}
+.fix{
+	width: 480px;
+	float: right;
+	position: relative;
+}
+.learn img{
+	width: 260px;
+	height: auto;
+	position:absolute;
+    left: 90px;
+	top: 40px;
+}
+.learntext{
+	width: 450px;
+	height: 140px;
+	position: absolute;
+	top: 230px;
+}
+.fixtext{
+	width: 450px;
+	height: 140px;
+	position: absolute;
+	top: 230px;
+}
+.learn h2{
+	font-size: 28px;
+	position: absolute;
+	top: 0px;
+	color: black;
+}
+.learn span{
+	color: rgb(39,118,152);
+}
+.learn span:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+.learn p{
+	font-size: 15px;
+	color: black;
+	position: absolute;
+	top: 50px;
+	line-height: 25px;
+}
+.learn h3{
+	font-size: 15px;
+	color: rgb(39,118,152);
+	position: absolute;
+	top:120px;
+}
+.learn h3:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+.fix img{
+	width: 260px;
+	height: auto;
+	position: absolute;
+	top: 50px;
+	left: 60px;
+}
+.fix h2{
+	font-size: 28px;
+	position: absolute;
+	top: 0px;
+	color: black;
+}
+.fix p{
+	font-size: 15px;
+	color: black;
+	position: absolute;
+	top: 40px;
+	line-height: 25px;
+}
+.fix h3{
+	font-size: 15px;
+	color: rgb(39,118,152);
+	position: absolute;
+	top: 120px;
+}
+.fix h3:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+.care{
+	width: 100%;
+	height:;
+}
+.servicedown{
+	position: relative;
+}
+.servicedown h2{
+	font-size: 21px;
+	letter-spacing: 2px;
+	color: black;
+	position: relative;
+	top: 30px;
+	color: black;
+	text-align: center;
+}
+.servicedowncenter{
+	width: 75%;
+	margin: auto;
+}
+.servicedowncenter  .first{
+	text-align: center;
+	font-size: 15px;
+	color: black;
+	position: relative;
+	top: 60px;
+
+}
+.servicedowncenter span{
+	color: rgb(39,118,152);
+}
+.servicedowncenter span:hover{
+	cursor: pointer;
+	text-decoration: underline;
+}
+.servicedowncenter  .second{
+	text-align: center;
+	font-size: 15px;
+	color: black;
+	position: relative;
+	top: 90px;
+}
+.join{
+	height: 515px;
+	width: 100%;
+	background-image: url(../images/today-at-apple-workshop-banner.image.large_2x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 30%;
+    position: relative;
+}
+.joinus{
+	width: 410px;
+	height: 200px;
+	position: absolute;
+    left: 15%;
+    top:32%;
+}
+/*有错误*/
+.joinus div h2{
+	font-size: 34px;
+	color: white;
+	text-align: left;
+	letter-spacing: 2px;
+}
+.joinus div{
+	width: 85%;
+	height: 50%;
+}
+.joinus p{
+	font-size: 15px;
+	color: white;
+    line-height: 24px;
+}
+.joinus h3{
+	color: rgb(39,118,152);
+	font-size: 15px;
+	position: relative;
+	top: 15px;
+	display: inline;
+}
+.joinus h3:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+.communicate{
+	height: 480px;
+	width: 100%;
+}
+.communicatecenter{
+	width: 980px;
+	height: 100%;
+	margin: auto;
+}
+.comleft{
+	float: left;
+	width: 480px;
+	height: 100%;
+}
+.comleft img{
+	width: 370px;
+	height: auto;
+    position: relative;
+    top: 40px;
+    left: 30px;
+}
+.comright{
+	float: right;
+	width: 480px;
+	height: 100%;
+}
+.comright img{
+	width: 370px;
+	height: auto;
+	position: relative;
+	top: 40px;
+	left: 30px;
+}
+.comlefttext{
+	width: 480px;
+	height: 150px;
+	position: relative;
+	top: 40px;
+}
+.comrighttext{
+	width: 480px;
+	height: 150px;
+	position: relative;
+	top: 40px;
+}
+.communicatecenter div div h2{
+	font-size: 27px;
+	color: black;
+	position: relative;
+	top: 0px;
+	left: 3px;
+}
+.communicatecenter div div p{
+	font-size: 16px;
+	color: black;
+	position: relative;
+	top: 20px;
+	line-height: 30px;
+}
+.communicatecenter div div h3{
+	font-size: 16px;
+	color: rgb(39,118,152);
+	position: relative;
+	top: 35px;
+	display: inline;
+}
+.communicatecenter div div h3:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+.information{
+	width: 100%;
+	height:955px;
+}
+.center{
+	width: 980px;
+	height: 100%;
+	margin: auto;
+}
+.protect{
+	width: 100%;
+	height: 245px;
+	position: relative;
+}
+.protect div{
+	width: 455px;
+	height: 105px;
+    position: absolute;
+    top: 62px;
+    left: 50px;
+}
+.protect img{
+	width: 150px;
+	position: absolute;
+	left: 68%;
+	top:50px;
+}
+.protect div h2{
+   font-size: 27px;
+	color: black;
+}
+.protect div  p{
+	font-size: 15px;
+	color: black;
+	position: relative;
+	top: 5px;
+}
+.protect div h3{
+	font-size: 16px;
+	color: rgb(39,118,152);
+	display: inline;
+	position: relative;
+	top: 12px;
+}
+.protect div h3:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+.after{
+	height: 150px;
+	width: 100%;
+}
+.after h2{
+	font-size: 21px;
+	text-align: center;
+	position: relative;
+	top: 25px;
+	color:black; 
+}
+.after h3{
+	font-size: 16px;
+	color: rgb(39,118,152);
+    display: inline;
+	position: relative;
+	top: 47px;
+	margin-left: 42%;
+}
+.after h3:hover{
+	cursor: pointer;
+	text-decoration: underline;
+}
+.close{
+	width: 100%;
+	height:180px;
+}
+.close h2{
+	font-size: 35px;
+	color: black;
+	text-align: center;
+	position: relative;
+	top: 35px;
+}
+.close h3{
+	font-size: 16px;
+	display: inline;
+	position: relative;
+	top: 59px;
+	margin-left: 45%;
+	color: rgb(39,118,152);
+}
+.close h3:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+.change{
+	width: 100%;
+	height: 380px;
+}
+.change h2{
+	font-size: 21px;
+	color: black;
+	position: relative;
+	top: 40px;
+	text-align: center;
+}
+.change ul li{
+	text-align: center;
+	margin:auto;	
+	margin-top: 17px;
+	/*width: 44%;*/
+}
+.change ul li a{
+	font-size: 16px;
+	color: rgb(39,118,152);
+	 
+}
+.change ul{
+	position: relative;
+	top: 60px;
+}
+.change ul li a:hover{
+	cursor: pointer;
+	text-decoration: underline;
+}
+.foot{
+	height: 310px;
+	width: 100%;
+	background-color: rgb(244,244,244);
+}
+.footcenter{
+	width: 980px;
+	height: 100%;
+	margin:auto;
+	border:1px solid transparent;
+}
+.foothead{
+	margin-top: 22px;
+	height: 18px;
+    position: relative;
+    overflow: hidden; 
+}
+.greyapple:hover{
+	position: relative;
+	bottom: 17.9px;
+	cursor: pointer;
+}
+.big{
+	position: relative;
+	left: 10px;
+	bottom: 18px;
+}
+.foothead p{
+	font-size: 8px;
+	position: absolute;
+	left: 50px;
+	top:2px; 
+}
+.fourmenu{
+	height: 180px;
+	width: 100%;
+	margin-top: 20px;
+}
+.fourmenu div{
+	width: 25%;
+	float: left;
+}
+.fourmenu div h4{
+	font-size: 10px;
+	color: black;
+}
+.fourmenu div h4 span{
+	display: none;
+}
+.fourmenu div ul li{
+    font-size: 10px;
+    margin-top: 8px;
+}
+.fourmenu div ul li:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+.footcenter p{
+	font-size: 10px;
+	margin-bottom: 7px;
+}
+.footcenter p span{
+	color: rgb(39,118,152); 
+}
+.footcenter p span:hover{
+	cursor: pointer;
+	text-decoration: underline;
+}
+.Copyright{
+	height: 30px;
+	margin-top:5px;
+}
+.Copyright p{
+	float: left;
+	font-size: 10px;
+}
+.Copyright ul li{
+	font-size: 10px;
+	float: left;
+	width: 70px;
+	margin-left: 0px;
+	text-align: center;
+}
+.Copyright ul li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.Copyright ul span{
+	display: block;
+	height: 3px;
+	width: 2px;
+	float: left;
+}
+.Copyright h6{
+	font-size: 10px;
+	float: right;
+}
+.Copyright img{
+    width: 15px;
+	height: auto;
+	float: right;
+}

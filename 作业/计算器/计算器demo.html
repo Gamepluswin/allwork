@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+	<input type="text" value="0" style="width:200px;height:50px" id="textbox"/>
+
+	<!-- 
+	
+		首先初始化一个输出框用来显示输入和输出的内容 并定义id为textbox
+
+	 -->
+
+	<button onclick="numIn(this)">1</button>
+
+	<button onclick="operatorIn(this)">+</button>
+
+	<button onclick="orderIn(this)">=</button>
+
+
+	<script>//定义script块 执行js脚本
+
+		//计算器的模型可以呗理解为下面的样子
+		//
+		//    first ? second = 
+		//      ↑        
+		//		
+		//    指针决定了现在是对着哪个操作数输入
+		//    first和second代表了*数和被*数（ * = 加减乘除）
+		//    若发生单步运算（根号，正负，倒数，CE），则直接对指针指向的操作数操作
+		//    若发生双目运算，则将结果存储到first中
+		//    若afterCaculation（即刚进行一次运算）为真则输入将覆盖指针指向的操作数并恢复为false 输入操作符也会使之恢复为false
+
+
+		var inputTemp;//在JS中 用var关键字定义变量 此处定义一个inputTemp 来接受并暂时保存待处理的输入框内容
+		var first;//第一操作数
+		var second;//第二操作数
+		var pointer=1;//指针（当作是）
+		var operator;//存储操作符
+		var afterCaculation=false;//存储'刚刚是否进行了运算'的真假性
+
+
+		// 同时变量的类型并不严格 是数字、字符、字串都可以，取决于具体情况 甚至可以是很复杂的"对象"!
+
+		//对象就是对于一个事物的理解方式 比方说对于一个人 你把他剖析成两个方面:属性和方法 
+		//属性就是他的身高、体重、个性、年龄、名字等个人数据
+		//方法就是他所能完成的事情，比如吃饭、睡觉、上课...
+
+		//在html文档中 每一个标签被解析为对象
+		//他们有属性，比如 他们的css属性，他们的内容，他们的子元素等等
+		//他们也有方法，比如改变自己的class，找到自己的子元素等等
+
+
+
+		function numIn(obj){//这里的obj代表传入的参数，可以和外部实际调用时不一致，但是函数块内部的要与这儿的obj一致
+
+			if( afterCaculation == false && operator && first && (!second) ){
+				//如果刚才并没有发生运算且仅输入了第一操作数 和 运算符号 而第二操作数未定义 则清空显示区域并开始对第二操作数进行操作
+				
+				pointer = 2;
+				//指向第二操作数
+				document.getElementById("textbox").value = 0;
+				//清空显示区域
+				
+			}
+
+			if(afterCaculation == true && pointer == 1){
+				//请自行理解...可以先不关注
+
+				document.getElementById("textbox").value = 0;
+
+				afterCaculation = false;
+
+			}//防止1+1=2后又按2----22
+
+			inputTemp = document.getElementById("textbox");
+
+			if( inputTemp.value == "0" ){ //如过inputTemp对应的标签的value属性为"0" 通常标签的value属性读取出来会是 字符串
+				//没有编程基础注意... js下进行等于判断用的是双等号
+
+				inputTemp.value = obj.innerHTML; //那么这个数调成1
+				//要注意 inputTemp.value这个对象的属性，既可以被提取出来，用作上面的等于等于比较，也可以在后面加个等号对他赋值！
+			}
+			else{//否则的话
+
+				inputTemp.value = inputTemp.value + obj.innerHTML;
+				//obj.innerHTML将获得obj这个标签对象的内容比如<h1>啊啊啊</h1>中的"啊啊啊"
+				//这个地方偷个懒 字符串 + 字符串 = 合并后的字符串
+				//这个地方进行了两个对于属性的操作 后面是取出了属性和输入的字符拼接 前面的则是把这个拼接了的字串取过来变成自己的属性值
+
+			}
+
+
+			if(pointer == 1){//当指针指向第一个操作数时
+
+				first = inputTemp.value;//将最终值赋给first，相当于真正的把值输入了
+			
+			} 
+			else if(pointer == 2){//没有编程基础的注意下这里的else if 代表着前面一个不发生的前提下，若后面这个事件成真则执行下列块
+			//当指针指向第二个操作数时
+			
+				second = inputTemp.value;//同上
+			
+			}
+               
+		}//这是一个函数 函数包含了参数和函数块，参数代表了函数中可以调用的变量，函数块内放函数所执行的任务
+		 //通常是结合各种变量数据完成特定的任务
+              
+		 function operatorIn(obj){//函数名的意思是操作符读入 虽然这里只有一个加号 但是还是要读入
+                  
+		 	operator = obj.innerHTML;
+		 	//将这个标签的内容（即符号读入并把这个字符赋值给operator变量）
+
+		 	if(pointer == 1){
+		 	//如果第一操作数已经有定义，则转而指向第二操作数
+		 		pointer=2;
+		 	}
+
+		 	second = 0;
+		 	//清空第二操作数，具体是为了已经进行了一遍运算后，清除残留变量用的
+
+		 	afterCaculation = false;
+		 	//根据前面的定义 清楚可能的"计算后"状态 以避免造成错误的覆盖
+
+		 }
+
+		 function orderIn(obj){
+
+		 		if(operator=="+"){
+		 		//若操作符为 "+"
+		 			
+		 			if(!second){
+		 				
+		 				//例如摁下 1 + = 此时二操作数没有，则将一操作数赋给二操作数 完成自加
+		 				second = first;
+
+		 			}
+
+		 			first = (first - 0) + (second - 0);
+		 			//此处 有个问题 first或者second里面存储的可能是字符串 用first-0可以使得其必被隐式转换成数字类型，避免变成字符串连接运算
+		 			
+		 			inputTemp = document.getElementById("textbox");
+
+		 			inputTemp.value = first;
+		 			//将结算结果送到标签的value属性里面，反作用于这个标签对象 使得其显示出first里面存储的结果值
+
+		 			pointer = 1;
+		 			//因为将计算结果保存在first中并显示 所以指针指向first
+		 		}
+
+		 		afterCaculation = true;
+		 		//无条件的置为true 以便后续判断
+		 }
+
+	</script>
+	<!-- 
+	
+	写在最后：
+	可能任务相对占用学习思考时间较多... 请千万千万合理规划时间... 并且鼓励私下进行交流 有问题可以考虑问16级的 当然如果觉得不合适 也鼓励去问问15、14的学长
+
+	
+	-->
+
+</body>
+</html>

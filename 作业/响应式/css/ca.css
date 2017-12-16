@@ -1,0 +1,795 @@
+@media screen and (min-width:767px) and (max-width:1000px){
+.welcome{
+	height: 680px;
+	width: 100%;
+	background-image: url(../images/homepage-hero.image.large_2x.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 38%;
+}
+.equal{
+	display: none;
+}
+.header{
+	height: 6.5%;
+	width:100%;
+	position: relative;
+}
+.headerul{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.headerul ul{
+	width: 88.888%;
+	position: absolute;
+	left: 11.11111%
+}
+.headerul li{
+	width: 13.11111%;
+	float: left;
+	line-height: 45px;
+	text-align: center;
+	font-size: 14px;
+}
+.headerul span{
+	color: white;
+}
+.headerul span:hover{
+	color: grey;
+	cursor: pointer;
+	text-decoration: none;
+}
+.smallappleborder{
+	width: 11.111111%;
+	height: 20px;
+	position: absolute;
+	top: 13px;
+	left: 20px;
+	overflow: hidden;	
+}
+
+.smallapple:hover{
+	opacity: 0.65
+}
+
+.search:hover{
+	opacity: 0.65;
+}
+
+.whitebag:hover{
+    opacity: 0.65
+}
+.subhead{
+	width: 100%;
+	height:93.5%;
+	position: relative;
+}
+.subheadhead{
+   height: 8%;
+   width: 100%;
+   position: relative;
+}
+.support{
+   font-size: 20px;
+   color: white;
+   position: absolute;
+   left: 7px;
+   top: 10px;
+}
+.subheadhead a{
+   width:50px; 
+   font-size: 2px;
+   color: white;
+   cursor: pointer;
+}
+.subheadhead a:hover{
+	text-decoration: none;
+	color: blue;
+	cursor: pointer;
+}
+.group{
+	position: absolute;
+	top:40%;
+	left:88%;
+}
+.link{
+	position: absolute;
+	top: 40%;
+	left:93%;
+}
+.cb{
+	display: none;
+}
+.subheaddown{
+	height: 92%
+}
+h1{
+	position: absolute;
+	top: 20%;
+	left: 29%;
+	font-size:35px;
+    color: white;
+    letter-spacing: 5px;
+}
+.subheaddown p{
+	font-size: 20px;
+	position: absolute;
+	top: 30%;
+	left: 41%;
+	color: white;
+}
+/*.input{
+	width: 60%;
+	height: 7%;
+	position: absolute;
+	top:40%;
+	left: 20%;
+	font-size: 30px;
+	background-image: url(../images/search_icon_black.svg);
+	background-repeat: no-repeat;
+	background-size: 28px 28px;
+	background-position: 5px 9px;
+}*/	
+.know{
+	height: 460px;
+	width: 100%;
+	position: relative;
+}
+.know h2{
+	font-size: 32px;;
+    position: absolute;
+	top: 12%;
+	left: 37%;
+    color: black;
+    letter-spacing: 3px;
+}
+.know ul{
+	width: 100%;
+	height: auto;
+	margin: auto;
+	position: absolute;
+	top:100px;
+	display: block;
+}
+.know ul li{
+	width: 33.33333%;
+	height: 183px;
+	float: left;
+	margin-right: 0px;
+	position: relative;
+}
+.Mac{
+	clear: both;
+}
+.know ul .itunes{
+	margin-right: 0px;
+}
+.know ul li img{
+	height: auto;
+	width: 65px;
+	position:absolute;
+	left: 39%;
+	top:10%; 
+}
+.know ul li p{
+	font-size: 15px;
+	text-align: center;
+	color: black;
+    position: relative;
+	top: 70%
+}
+.know ul li:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+.unfold{
+	text-align: center;
+	height: 70px;
+	line-height: 70px;
+	color: rgb(39,118,152);
+	font-size: 15px;
+}
+.unfold span:hover{
+	cursor: pointer;
+}
+.news{
+	height: 620px;
+	width: 100%;
+	position: relative;
+}
+.newscenter{
+	width: 690px;
+	margin: auto;
+}
+.newsup{
+	width:100%;
+	height: 300px;
+	position: relative; 
+}
+.newsup h2{
+	font-size: 34px;
+	letter-spacing: 2px;
+	color: black;
+	position: absolute;
+	top: 35px;
+	left: 27%;
+}
+.newsup p{
+	position: relative;
+	top: 100px;
+	text-align: center;
+	font-size: 19px;
+	line-height: 35px;
+}
+.newscenter img{
+	width: 410px;
+	height: auto;
+	float: right;
+	position: absolute;
+	top: 55%;
+	left: 25%;
+}
+.newsup h3{
+	font-size: 19px;
+	color: rgb(39,118,152);
+	position: relative;
+	top: 150px;
+	text-align: center;
+}
+.newsup h3:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+.newsup h4{
+	font-size: 19px;
+	color: rgb(39,118,152);
+	position: relative;
+	top: 180px;
+	text-align: center;
+}
+.newsup h4:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+.service{
+	width: 100%;
+	height: 720px;
+}
+.servicecenter{
+	width: 100%;
+	height: 100%;
+	margin:auto;
+}
+.servicetop{
+	height: 460px;
+}
+.learn{
+	width: 690px;
+	height: 230px;
+	float: none;
+	position: relative;
+	margin: auto;
+}
+.fix{
+	width: 690px;
+	height: 230px;
+	float: none;
+	position: relative;
+	margin: auto;
+}
+.learn img{
+	width: 180px;
+	height: auto;
+	position:relative;
+    left: 10px;
+	top: 50px;
+	float:left; 
+}
+.learntext{
+	width: 450px;
+	height: 140px;
+	position: relative;
+	top: 40px;
+	float: right;
+}
+.fixtext{
+	width: 450px;
+	height: 140px;
+	position: relative;
+	top: 40px;
+	float: right;
+}
+.learn h2{
+	font-size: 28px;
+	position: absolute;
+	top: 0px;
+	color: black;
+}
+.learn span{
+	color: rgb(39,118,152);
+}
+.learn span:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+.learn p{
+	font-size: 15px;
+	color: black;
+	position: absolute;
+	top: 50px;
+	line-height: 25px;
+}
+.learn h3{
+	font-size: 15px;
+	color: rgb(39,118,152);
+	position: absolute;
+	top: 120px;
+}
+.learn h3:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+.fix img{
+	width: 180px;
+	height: auto;
+	position: relative;
+	top: 50px;
+	left: 10px;
+	float: left;
+}
+.fix h2{
+	font-size: 28px;
+	position: absolute;
+	top: 0px;
+	color: black;
+}
+.fix p{
+	font-size: 15px;
+	color: black;
+	position: absolute;
+	top: 50px;
+	line-height: 25px;
+}
+.fix h3{
+	font-size: 15px;
+	color: rgb(39,118,152);
+	position: absolute;
+	top: 120px;
+}
+.fix h3:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+.care{
+	width: 100%;
+	height:;
+}
+.servicedown{
+	position: relative;
+}
+.servicedown h2{
+	font-size: 21px;
+	letter-spacing: 2px;
+	color: black;
+	position: relative;
+	top: 30px;
+	color: black;
+	text-align: center;
+}
+.servicedowncenter{
+	width: 75%;
+	margin: auto;
+}
+.servicedowncenter  .first{
+	text-align: center;
+	font-size: 15px;
+	color: black;
+	position: relative;
+	top: 60px;
+
+}
+.servicedowncenter span{
+	color: rgb(39,118,152);
+}
+.servicedowncenter span:hover{
+	cursor: pointer;
+	text-decoration: underline;
+}
+.servicedowncenter  .second{
+	text-align: center;
+	font-size: 15px;
+	color: black;
+	position: relative;
+	top: 90px;
+}
+.join{
+	height: 515px;
+	width: 100%;
+	background-image: url(../images/today-at-apple-workshop-banner.image.large_2x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 30%;
+    position: relative;
+}
+.joinus{
+	width: 410px;
+	height: 200px;
+	position: absolute;
+    left: 15%;
+    top:32%;
+}
+/*有错误*/
+.joinus div h2{
+	font-size: 34px;
+	color: white;
+	text-align: left;
+	letter-spacing: 2px;
+}
+.joinus div{
+	width: 85%;
+	height: 50%;
+}
+.joinus p{
+	font-size: 15px;
+	color: white;
+    line-height: 24px;
+}
+.joinus h3{
+	color: rgb(39,118,152);
+	font-size: 15px;
+	position: relative;
+	top: 15px;
+	display: inline;
+}
+.joinus h3:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+.communicate{
+	height: 470px;
+	width: 100%;
+}
+.communicatecenter{
+	width: 700px;
+	height: 100%;
+	margin: auto;
+}
+.comleft{
+	float: left;
+	width: 720px;
+	height: 50%;
+}
+.comleft img{
+	width: 240px;
+	height: auto;
+    position: relative;
+    top: 40px;
+    left: 30px;
+    float: left;
+}
+.comright{
+	float: right;
+	width: 720px;
+	height: 50%;
+}
+.comright img{
+	width: 240px;
+	height: auto;
+	position: relative;
+	top: 40px;
+	left: 30px;
+	float: left;
+}
+.comlefttext{
+	width: 440px;
+	height: 150px;
+	position: relative;
+	top: 40px;
+	float: right;
+}
+.comrighttext{
+	width: 440px;
+	height: 150px;
+	position: relative;
+	top: 40px;
+	float: right;
+}
+.communicatecenter div h2{
+	font-size: 25px;
+	color: black;
+	position: relative;
+	top: 0px;
+	left: 3px;
+}
+.communicatecenter div p{
+	font-size: 15px;
+	color: black;
+	position: relative;
+	top: 20px;
+	line-height: 30px;
+}
+.communicatecenter div h3{
+	font-size: 15px;
+	color: rgb(39,118,152);
+	position: relative;
+	top: 35px;
+	display: inline;
+}
+.communicatecenter div h3:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+.information{
+	width: 100%;
+	height:955px;
+}
+.center{
+	width: 100%;
+	height: 100%;
+	margin: auto;
+}
+.protect{
+	width: 100%;
+	height: 245px;
+	position: relative;
+}
+.protect div{
+	width: 455px;
+	height: 105px;
+    position: absolute;
+    top: 62px;
+    left: 15%;
+}
+.protect img{
+	display: none;
+	width: 150px;
+	position: absolute;
+	left: 68%;
+	top:50px;
+}
+.protect div h2{
+   font-size: 27px;
+	color: black;
+}
+.protect div  p{
+	font-size: 15px;
+	color: black;
+	position: relative;
+	top: 5px;
+}
+.protect div h3{
+	font-size: 16px;
+	color: rgb(39,118,152);
+	display: inline;
+	position: relative;
+	top: 12px;
+}
+.protect div h3:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+.after{
+	height: 150px;
+	width: 100%;
+}
+.after h2{
+	font-size: 21px;
+	text-align: center;
+	position: relative;
+	top: 25px;
+	color:black; 
+}
+.after h3{
+	font-size: 16px;
+	color: rgb(39,118,152);
+    display: inline;
+	position: relative;
+	top: 47px;
+	margin-left: 42%;
+}
+.after h3:hover{
+	cursor: pointer;
+	text-decoration: underline;
+}
+.close{
+	width: 100%;
+	height:180px;
+}
+.close h2{
+	font-size: 35px;
+	color: black;
+	text-align: center;
+	position: relative;
+	top: 35px;
+}
+.close h3{
+	font-size: 16px;
+	display: inline;
+	position: relative;
+	top: 59px;
+	margin-left: 45%;
+	color: rgb(39,118,152);
+}
+.close h3:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+.change{
+	width: 100%;
+	height: 380px;
+}
+.change h2{
+	font-size: 21px;
+	color: black;
+	position: relative;
+	top: 40px;
+	text-align: center;
+}
+/*.change ul li{
+	font-size: 16px;
+	color: rgb(39,118,152); 
+	margin:auto;
+	text-align: center;
+	margin-top: 17px;
+	width: 44%;
+}*/
+.change ul{
+	position: relative;
+	top: 60px;
+}
+/*.change ul li a:hover{
+	cursor: pointer;
+	text-decoration: underline;
+}*/
+.foot{
+	height: 310px;
+	width: 100%;
+	background-color: rgb(244,244,244);
+}
+.footcenter{
+	width: 99%;
+	height: 100%;
+	margin:auto;
+	border:1px solid transparent;
+}
+.foothead{
+	margin-top: 22px;
+	height: 18px;
+    position: relative;
+    overflow: hidden; 
+}
+.greyapple:hover{
+	position: relative;
+	bottom: 17.9px;
+	cursor: pointer;
+}
+.big{
+	position: relative;
+	left: 10px;
+	bottom: 18px;
+}
+.foothead p{
+	font-size: 10px;
+	position: absolute;
+	left: 50px;
+	top:2px; 
+}
+.fourmenu{
+	height: 180px;
+	width: 100%;
+	margin-top: 20px;
+}
+.fourmenu div{
+	width: 24.8%;
+	float: left;
+}
+.fourmenu div h4{
+	font-size: 10px;
+	color: black;
+}
+.fourmenu div h4 span{
+	display: none;
+}
+.fourmenu div ul li{
+    font-size: 10px;
+    margin-top: 8px;
+}
+.fourmenu div ul li:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+.footcenter p{
+	font-size: 10px;
+	margin-bottom: 7px;
+}
+.footcenter p span{
+	color: rgb(39,118,152); 
+}
+.footcenter p span:hover{
+	cursor: pointer;
+	text-decoration: underline;
+}
+.Copyright{
+	height: 30px;
+	margin-top:5px;
+}
+.Copyright p{
+	float: left;
+	font-size: 10px;
+}
+.Copyright ul li{
+	font-size: 10px;
+	float: left;
+	width: 70px;
+	margin-left: 0px;
+	text-align: center;
+}
+.Copyright ul li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.Copyright ul span{
+	display: block;
+	height: 3px;
+	width: 2px;
+	float: left;
+}
+.Copyright h6{
+	font-size: 10px;
+	float: right;
+}
+.Copyright img{
+    width: 15px;
+	height: auto;
+	float: right;
+}
+}
+@media screen and (min-width:1366px){
+    .headerul{
+    	width: 1200px;
+    }
+    .headerul ul{
+    	width: 900px;
+    }
+    .headerul ul li{
+    	width: 150px
+    }
+    .subhead{
+    	width: 1200px;
+    }
+    .subheadhead{
+    	width: 1200px;
+    }
+    .know ul{
+    	width: 1200px;
+    }
+    .know ul li{
+    	width: 140px;
+    }
+    .footcenter{
+    	width: 1200px;
+    }
+    .center{
+    	width: 1200px;
+    }
+    .change{
+    	width: 1200px;
+    }
+    .close{
+    	width: 1200px;
+    }
+    .after{
+    	width: 1200px;
+    }
+    .protect{
+    	width: 1200px;
+    }
+    .communicatecenter{
+    	width: 1200px;
+    }
+    .servicecenter{
+    	width: 1200px;
+    }
+
+}

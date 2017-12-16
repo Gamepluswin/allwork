@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>big homework.3</title>
+	<style>
+	body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td { margin:0; padding:0; }
+body { background:#fff; color:#555; font-size:14px; font-family: Verdana, Arial, Helvetica, sans-serif; }
+td,th,caption { font-size:14px; }
+h1, h2, h3, h4, h5, h6 { font-weight:normal; font-size:100%; }
+address, caption, cite, code, dfn, em, strong, th, var { font-style:normal; font-weight:normal;}
+a { color:#555; text-decoration:none; }
+a:hover { text-decoration:underline; }
+img { border:none; }
+ol,ul,li { list-style:none; }
+input, textarea, select, button { font:14px Verdana,Helvetica,Arial,sans-serif; }
+table { border-collapse:collapse; }
+html {overflow-y: scroll;}
+
+.clearfix:after {content: "."; display: block; height:0; clear:both; visibility: hidden;}
+.clearfix { *zoom:1; }/*郭凯璐*/
+*{
+  padding: 0px;
+  margin: 0px;
+  font-family: '微软雅黑',sans-serif;
+  font-weight: 530;
+  color: black;
+}
+.welcome{
+    height: 59px;
+    width: 100%;  
+}
+.center{
+  width: 1200px;  
+  margin: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.welcome div img{
+  width: 25px;
+  height: 31px;
+  display: block;
+  float: right;
+    position: absolute;
+    top: 19px;
+    right: 140px;
+}
+.welcome div h2{
+  font-size: 14px;
+  float: left;
+  position: absolute;
+  top: 22px; 
+  left: 0px;
+}
+.welcome div h3{
+    float: right;
+    font-size: 14px;
+    position: absolute;
+    top: 22px;
+    right: 0px;
+}
+.welcome div ul{
+  position: absolute;
+  top: 22px;
+  right: 190px;
+}
+.welcome div ul li{
+  float: right;
+  margin-right: 10px;
+}
+.welcome div ul li a{
+  text-decoration: none;
+  cursor: pointer;
+}
+.head{
+  height: 134px;
+  width: 100%;
+  background-color: rgb(231,231,231);
+}
+.logo{
+  width: 372px;
+  height: 38px;
+  position: absolute;
+  left: 0px;
+  top: 49px;
+}
+.cart{
+  position: absolute;
+  top: 34px;
+  right: 0px;
+  cursor: pointer;
+}
+.head div ul{
+  position: absolute;
+  right: 220px;
+  width: 40%;
+}
+.head div ul li{
+  float: right;
+  width: 25%;
+}
+.hover{
+  position: relative;
+}
+.hover:hover{
+  background-color: rgb(245,245,245);
+}
+
+.hover img{
+  display: block;
+  position: absolute;
+  bottom: 28px;
+  left: 44px;
+  cursor: pointer;
+}
+.head div ul li a{
+  text-align: center;
+  line-height: 134px;
+  font-size: 18px;
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+  left: 30px;
+}
+.subhead{
+  background-color: white;
+  height: 50px;
+  position: relative;
+}
+.subhead div span{
+  line-height: 50px;
+  font-size: 16px;
+  display: block;
+  float: left;
+}
+.hide{
+    display: none;
+    width: 100%;
+    height: 222px;
+    position: absolute;
+    top: 0px;
+    z-index: 100;
+    background-color: white;
+    opacity: 0.8;
+}
+.hide dl dt{
+  color: rgb(255,113,0);
+  float: left;
+  font-size: 20px;
+  display: inline-block;
+  padding-top: 38px;
+}
+.dltwo{
+  clear: left;
+}
+.dlthree{
+  clear: left;
+}
+.dttwo{
+  margin-right: 60px;
+}
+.dtone{
+  margin-right: 80px;
+}
+.dtthree{
+  margin-right: 80px;
+}
+.hide dl dd{
+  color: black;
+  float: left;
+  font-size: 18px;
+  display: inline-block;
+    padding-top: 38px;
+    margin-right: 34px;
+    cursor: pointer;
+}/*袁心如*/
+   #container1{
+    clear:left;
+    height:900px;
+   
+    overflow: hidden;
+    position: relative;
+  }
+  #list{
+    width:7860px;
+    height: 971px;
+    overflow: hidden;
+    position: absolute;
+    float:left;
+ }
+   #list li{
+    
+    float:left;
+   }
+   #list img{ 
+    width:1920px;
+    height: 971px;
+   }
+   .litext{
+    font-family:"微软雅黑";
+    font-size:18px;
+    line-height:35px;
+    width: 523px;
+    height: 195px;
+    z-index:2;
+    position: absolute;
+    top:300px;
+    left:329px;
+   }
+   .litext p{
+    font-size:30px;
+   }
+   .libutton{
+    width: 231px;
+    height: 80px;
+    z-index: 2;
+    position: absolute;
+    top:555px;
+    left:327px;
+    border-radius: 10px;
+    background: #FF7100;
+    font-size:18px;
+    color:rgb(255,255,255);
+   }
+   #points{
+    position: absolute;
+    width:50%;
+    top:850px;
+    left:25%;
+    z-index:2;
+    opacity: 0.5;
+    height: 6px;
+   }
+   #points span{
+    display:block;
+    width: 10%;
+    height: 6px;
+    margin-left:10%;
+    float: left;
+    background: white;
+   }
+   #points .on{
+    opacity: 1;
+    background:grey;
+   }
+    .xiangqing{
+    	font-family: "微软雅黑";
+    	height:2350px;
+      clear:left;
+    	background: rgb(231,231,231);
+    }
+    .jieshao{
+    	z-index:1;
+    	margin-left:17%;
+    	margin-right:15%;
+    	background: rgb(230,230,230);
+    	height: 100px;
+    	color: black;
+    	font-size:40px;
+    	line-height: 100px;
+    	font-family: "微软雅黑";
+    	font-weight:530;
+    	font-style: italic;
+    	border-bottom: 8px solid rgb(231,231,231)
+    }
+    .jieshao span{
+    	font-size:45px;
+    	color: #f50;
+    	font-style:normal;
+    	font-weight:530;
+    }
+    .xian{
+    	z-index: 2;
+    	width:200px;
+    	height: 8px;
+    	background:#f50;
+    }
+    #pictures{
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+     width: 65%;
+    	color: black;
+    	height: 370px;
+    	background: rgb(231,231,231);
+    	text-align: center;
+    	font-weight:530;
+      margin-left:18%;
+      margin-right:50%;
+    }
+    #pictures li{
+      width: 14%;
+     background: 
+     line-height:30px;
+     font-size:18px; 
+     margin-top:50px;
+     float:left;
+     height: 300px;
+    }
+    .xiangqing img{
+    	margin-top:50px;
+      padding-left:3%;
+    	width: 345px;
+    	height: auto;
+    }
+    #pictures img{
+    	margin-top:0px;
+    	width: 179px;
+    	height:268px;
+      margin-right:30px;
+    }
+    #pictures p{
+    	font-size:20px;
+    	color: #f50;
+      z-index: 1;
+    }
+    #pictures-list{
+      width: 1500px;
+      height: 350px;
+      z-index: 1;
+      position: relative;
+    }
+    #pictures img:hover{
+      position: relative;
+      top:-100px;
+      z-index: 1;
+    	height: 368px;
+    	overflow: hidden;
+    }
+    #zuo1{
+      position: relative;
+      z-index: 2;
+      width: 35px;
+      height: 200px;
+      opacity: 0.7;
+    }
+    #you1{
+      position: relative;
+      z-index: 2;
+      width: 35px;
+      height: 200px;
+      /*background: none;*/
+      opacity: 0.7;
+    }
+    #you{
+      position: relative;
+      top:-580px;
+      left:3450%;
+       width: 35px;
+      height: 268px;
+    }
+    #zuo{
+      position: relative;
+      top:-580px;
+      width: 35px;
+      height: 268px;
+    }
+    /*.pic{
+     position: relative;
+     z-index: 2;
+     top:-360px;
+    }*/
+    .xiala{
+    	width: 75%;
+    	height: 500px;
+    	background: rgb(255,252,245);
+    	margin:0px auto;
+    }
+    .xiala1{
+    	margin-top:50px;
+    	width: 40%;
+    	height:500px;
+    	z-index:1;
+    }
+    .xiala1 img{
+    	width: 33%;
+    	height:400px;
+      margin-left:-1%;
+      z-index:1;
+      position: absolute;
+    }
+    .xiala1-2{
+    	width:33%;
+    	height: 73px;
+    	line-height: 33px;
+    	font-size:23px;
+    	background: #f50;
+    	text-align: center;
+    	z-index: 2;
+    	position: absolute;
+    	margin-top:365px;
+      margin-left:2%;
+    	padding-top:10px;
+      opacity: 0;
+    	}
+    div.xiala1-2:hover{
+      opacity: 0.7;
+    }
+    .xiala2{
+    	width:35%;
+    	height: 400px;
+    	border-left:4px solid rgb(231,231,231);
+    	padding-left:2%;
+      margin-top:50px;
+      position: absolute;
+       margin-left:37%;
+       font-family: "微软雅黑";
+      font-size:20px;
+    }
+    .xiala2 p{
+    	font-size:40px;
+    	padding-bottom: 50px;
+    }
+    .xiala2 button{
+    	width: 27%;
+    	height: 15%;
+    	background: #f50;
+    	margin-top:23%;
+    	border-radius: 10px;
+    	margin-left:20px;
+      outline:none;
+    }
+    .tupian0{
+      margin-left:12%;
+      padding-bottom:20px;
+      height:100px;
+      width: 50%;
+      background: rgb(231,231,231);
+    }
+    .tupian0 img{
+      height: 40px;
+      width: auto;
+    }
+    .produce{
+      position:relative;
+      width:1200px;
+      z-index: 1;
+     margin:0px auto;
+      height:1100px;
+      color: black;
+      font-size:40px;
+      line-height: 100px;
+      font-family: "微软雅黑";
+      font-weight:530;
+      font-style: italic;
+      border-bottom: 8px solid rgb(231,231,231)
+      FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=rgb(51,51,51),endColorStr=rgb(108,102,102)); /*IE*/ 
+background:-moz-linear-gradient(left,#333333,#6c6666);/*火狐*/ 
+background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(#333333),to(#6c6666));/*谷歌*/ 
+background-image: -webkit-gradient(linear,left bottom,left top,color-start(0, #333333),color-stop(1, #6c6666));/* Safari & Chrome*/  
+    }
+    
+    .tupian1{
+      position: absolute;
+      float:left;
+      margin-left:4%;
+      margin-right:30px;
+    }
+    .xuanfu
+    { 
+      position: absolute;
+      background:#FF7110;
+      position: relative;
+      z-index:2;
+      width: 348px;
+      height: 70px;
+      font-size:18px;
+      color:rgb(255,255,255);
+      opacity: 0;
+      top:-100px;
+      left:8px;
+      line-height: 70px;
+      text-align: center;
+    }
+    div.xuanfu:hover{
+    opacity: 0.8;
+    }
+    .tupian3{
+      position: absolute;
+      left:420px;
+      float:left;
+      position: 
+    }
+    .tupian4{
+      position: absolute;
+      left:800px;
+      float:left;
+    }
+    .tupian5{
+      position:absolute;
+      top:610px;
+      left:50px;
+      float:left;
+    }
+    .tupian6{
+      position:absolute;
+      left:420px;
+      top:380px;
+      float;left;
+    }
+    .tupian7{
+      height: 276px;
+      width: 276px;
+      position: absolute;
+      top:420px;
+      left:820px;
+      float:left;
+      background: #f50;
+      border-radius: 360px;
+    }
+    .tupian7-1{
+      width: 130px;
+      height: 50px;
+      color:white;
+      position: absolute;
+      z-index:2;
+      top:150px;
+      left:80px;
+      margin:0px auto;
+      font-size:18px;
+      line-height:35px;
+    }
+    .tupian7 img{
+      position: absolute;
+      left:80px;
+      width: 95px;
+      height: 98px;
+    }
+    .tupian2{
+      float:left;
+      position: absolute;
+      top:670px;
+      left:750px;
+      margin-left:40px;
+    }
+    .tupian img{
+      width: 345px;
+      height: 288px;
+    }/*郭凯璐*/
+.footone{
+  width: 100%;
+  height: 173px;
+  background-color: rgb(238,238,238);
+}
+.footone div div img{
+  width: 335px;
+  height: 35px;
+  position: absolute;
+  left: 0px;
+  top: 20px;
+}
+.footone div div{
+  height: 65px;
+}
+.td1{
+  float: left;
+  text-align: left;
+}
+.td3{
+  float: right;
+  text-align: left;
+}
+.td2{
+  float: right;
+  position: relative;
+  right: 350px;
+}
+
+.footone div ul{
+  margin-top: 0px;
+}
+.footone div ul li{
+  line-height: 30px;   
+}
+.footone div ul li a{
+  color: rgb(53,53,53);
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: 'AdobeInvisFont','微软雅黑';
+}
+
+
+
+
+.foot{
+  height: 70px;
+}
+.foot ul{
+    width: 980px;
+  height: 70px;
+  margin: auto;
+}
+.foot ul li{
+    float: left;
+    line-height: 70px;
+    font-size: 19px;
+}
+    /*.footer{
+       height: 200px;
+       background: rgb(231,231,231);
+    }
+    .footer img{
+      margin-left:-40%;
+    	width: 347px;
+    	height: 38px;
+    }
+    .mulv{
+      margin-left:15%;
+      width: 75%;
+    	font-size:20px;
+    	height:75px;
+    	position: relative;
+      z-index: 1;
+      top:-330px;
+    }
+    .mulv td{
+    	width: 20%;
+    }
+    .lianxi{
+    	height: 56px;
+    	line-height: 50px;
+    	font-family: "微软雅黑";
+    	font-size:15px;
+    	width: 100%;
+    	margin: 0px auto;
+    	text-align:center;
+    	background: white;
+    	margin-top:20px;
+      position: relative;
+      z-index: 1;
+      top:-270px;
+    	background: rgb(255,255,255);
+    }*/
+    @media screen and (max-width:1220px) and (min-width:980px){
+      .center{
+      width: 100%;
+    }
+    .foot ul{
+     width: 100%;
+    }
+    /*袁心如*/
+
+    }
+    @media screen and (max-width: 1220px) {
+      .xiangqing{
+        height: 2000px;
+      }
+      .produce{
+        width: 900px;
+        height: 800px;
+      }
+      .produce img{
+       width: 250px;
+       height: auto;
+      }
+       .xuanfu
+    { 
+      width: 250px;
+      height: 50px;
+      font-size:18px;
+      color:rgb(255,255,255);
+      opacity: 0;
+      top:-83px;
+      left:7px;
+      line-height: 50px;
+      text-align: center;
+    }
+    .tupian3{
+      position: absolute;
+      left:315px;
+      float:left;
+      position: 
+    }
+    .tupian4{
+      position: absolute;
+      left:600px;
+      float:left;
+    }
+    .tupian5{
+      position:absolute;
+      top:450px;
+      left:40px;
+      float:left;
+    }
+    .tupian6{
+      position:absolute;
+      left:320px;
+      top:285px;
+      float;left;
+    }
+    .tupian7{
+      height: 200px;
+      width: 200px;
+      position: absolute;
+      top:330px;
+      left:620px;
+      float:left;
+      background: #f50;
+      border-radius: 360px;
+    }
+    .tupian7-1{
+      width: 100px;
+      height: 40px;
+      color:white;
+      position: absolute;
+      z-index:2;
+      top:130px;
+      left:50px;
+      margin:0px auto;
+      font-size:15px;
+      line-height:20px;
+    }
+    .tupian7 img{
+      position: absolute;
+      left:60px;
+      width: 70px;
+      height: 73px;
+    }
+    .tupian2{
+      float:left;
+      position: absolute;
+      top:498px;
+      left:550px;
+      margin-left:40px;
+    }
+    .tupian img{
+      width: 345px;
+      height: 288px;
+    }
+    }/*郭凯璐*/
+	</style>
+</head>
+<body>
+<div class="welcome">
+    <div class="center">
+      <h2>WELCOME TO SENNHEISER</h2>
+      <h3>4008-000-000</h3>
+      <img src="./img./dianhua.png">
+      <ul>
+        <li><a>购物</a></li>
+        <li><a>帮助</a></li>
+        <li><a>注册</a></li>
+        <li><a>登录</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="head">
+    <div class="center">
+      <img src="./img./logo.png" class="logo">
+      <img src="./img./20171204225949.png" class="cart">
+      <ul>
+        <li class="hover blue">
+          <a>蓝牙耳机</a>
+          <img src="./img./down.png" 
+          name="sublist">
+        </li>
+        <li class="hover putear">
+          <a>入耳式</a>
+          <img src="./img./down.png" name="sublist">
+        </li>
+        <li class="hover puthead">
+          <a href="../dianshang.html">头戴式</a>
+          <img src="./img./down.png"
+            name="sublist">
+        </li>
+        <li><a>首页</a></li>
+      </ul>
+    </div>
+  </div>
+ <div id="container1">
+  <div class="hide" id="hide">
+            <div class="center">
+                <dl class="dlone">
+                  <dt class="dtone">px系列</dt>
+                  <dd>px100</dd>
+                  <dd>px200</dd>
+                  <dd>px300</dd>
+                  <dd>px400</dd>
+                  <dd>px500</dd>
+                </dl>
+            
+                <dl class="dltwo">
+                  <dt class="dttwo">HD系列</dt>
+                  <dd>HD600</dd>
+                  <dd>HD660</dd>
+                  <dd>HD700</dd>
+                  <dd>HD750</dd>
+                  <dd>HD800</dd>
+                </dl>
+
+                <dl class="dlthree">
+                  <dt class="dtthree">IE系列</dt>
+                  <dd>IE100Ti</dd>
+                  <dd>IE200Ti</dd>
+                  <dd>IE440T</dd>
+                  <dd>IE500i</dd>
+                  <dd>IE600</dd>
+                </dl>
+            </div>
+        </div><!-- 袁心如 -->
+   <div id="list" style="left:0px">
+   <li><img src="./img/B1.jpg"></li>
+   <li><img src="./img/P1.jpg"></li>
+   <li><img src="./img/G1.jpg"></li>
+   <li><img src="./img/G2.jpg"></li>
+   <div class="litext"><p>PXC 550 Wireless</p></br></br>您飞来飞去，坐过所有级别的客舱，但都无法比拟随身佩戴PXC 550无线耳机所带来的非凡体验。出门在外，但时刻保持联系。穿梭于不同的地方时，PXC   550无线耳机是您的好伴侣，让您舒适地保持联系</div>
+      <button class="libutton">$399 立即购买</button>
+  </div>
+   <div id="points">
+       <span index="1" class="on"></span>
+       <span index="2"></span>
+       <span index="3"></span>
+       <span index="4"></span>
+  </div>
+</div>
+ <div class="xiangqing">
+   <div class="jieshao"><span>H</span>ot   produce
+      <div class="xian"></div></div>
+    <div id="pictures">
+     <div id="pictures-list" style="left:0px">
+      <li><p><strong>ie 80</strong></p><strong>享受极致音效</strong></br></br><img src="./img/P1.jpg"></li>
+       <li><p><strong>hd 800</strong></p><strong>梦想</strong></br></br><img src="./img/P2.png"></li>
+       <li><p><strong>MOMENTUM 2.0</strong></p><strong>都市人的最爱</strong></br></br><img src="./img/P3.jpg"></li>
+       <li><p><strong>炫酷的设计</strong></p>高品质的保证</br></br><img src="./img/P4.jpg"></li>
+       <li><p><strong>CX 900i</strong></p><strong>低调奢华的定义者</strong></br></br><img src="./img/P5.jpg"></li>
+       <li><p><strong>pxc 550</strong></p><strong>心境，心境</strong></br></br><img src="./img/P6.jpg"><li>
+      <li><p><strong>ie 80</strong></p><strong>享受极致音效</strong></br></br><img src="./img/P1.jpg"></li>
+      
+     </div>
+      <div id="you1"><button id="you">></button></div>
+      <div id="zuo1"><button id="zuo"><</button></div>
+    </div>
+    <div class="xiala">
+       <div class="xiala1">
+         <img src="./img/P4.jpg">
+         <div class="xiala1-2">Only need $199!!</br>What are you waiting for</div>
+       <div class="xiala2"><p>mx 990</p>Lorem ipsum dolor sit amet, conseteur sadipscing elitr, sed diam nonumy eirmod tempor <span> find more</span></br><button>加入购物车</button><button>立即购买</button>
+       </div>
+       </div>
+
+    </div>
+    <div class="tupian0"><img src="./img/New product.png"></div>
+    <div class="produce">
+      
+      <div class="tupian1"><img src="./img/ej1.jpg"><div class="xuanfu">HD4.30 头戴式手机"</div></div>
+      <div class="tupian3"><img src="./img/ej2.png"><div class="xuanfu">HD280 PRO头戴式手机</div></div>
+      <div class="tupian4"><img src="./img/ej3.jpg"><div class="xuanfu">HD4.40BT WIRELESS</div></div>
+      <div class="tupian5"><img src="./img/ej4.png"><div class="xuanfu">PXC550 WIRELESS</div></div>
+      <div class="tupian6"><img src="./img/ej5.jpg"><div class="xuanfu">HD4.40BT WIRELESS</div></div>
+      <div class="tupian7"><img src="./img/ej6.png"><div class="tupian7-1">更多最新产品 等你来发现</div></div>
+      <div class="tupian2"><img src="./img/ej7.jpg"><div class="xuanfu">PCX 95 后挂式入耳式耳机</div></div>
+   </div>
+ </div><!-- 郭凯璐 -->
+ <div class="footone">
+        <div class="center">
+          <div><img src="./img./logo.png"></div>
+          <ul class="td1">
+            <li><a>关于Sennheiser</a></li>
+            <li><a>法律信息</a></li>
+            <li><a>隐私保护</a></li>
+          </ul>
+          <ul class="td3">
+            <li><a>联系</a></li>
+            <li><a>还有疑问？欢迎联系我们！</a></li>
+          </ul>
+          <ul class="td2">
+            <li><a>客服服务</a></li>
+          </ul>
+          
+        </div>
+      </div>
+      <div class="foot">
+        <ul>
+          <li>©2017森海塞尔电子（ 北 京 ）有限公司 | </li>
+          <li>京 公 网 安 备 1 1 0 1 0 5 0 2 0 0 6 8 9 3 | </li>
+          <li> 京ICP备 1 1 0 0 0 0 0 5</li>
+        </ul>
+      </div><!-- 袁心如 -->
+  <script type="text/javascript">
+  window.onload=function(){
+
+   var container=document.getElementById('pictures');
+   var list=document.getElementById('pictures-list');
+   // var buttons=getElementById('list1').getElementsByTagName('button');
+   var  per=document.getElementById('zuo');
+   var next=document.getElementById('you');
+   var list1=document.getElementById('list')
+
+   var container1=document.getElementById('container1');
+   var buttons=document.getElementById('points').getElementsByTagName('span')
+   var index=1;
+   var timer;
+   function Show(){
+    for(var i=0;i<buttons.length;i++){
+      if(buttons[i].className == "on")
+       { buttons[i].className ="";
+       break;}
+    }
+    buttons[index-1].className ='on';
+  }
+   function setting(obj){
+    //var speed=obj/(300/10);
+    var newleft=parseInt(list.style.left)+obj;
+        list.style.left=newleft+"px";
+        if(newleft > 114)
+           list.style.left = -2250 + 'px';
+        if(newleft <-2250)
+        list.style.left = 114 +'px';
+        console.log(list.style.left);
+  }
+ 
+   next.onclick = function()
+   {
+    setting(219);
+   } 
+    per.onclick = function()
+    {
+    setting(-219);
+   }  
+ function setting1(obj){
+  var speed=obj/(300/10);
+  var newleft1=parseInt(list1.style.left)+obj;
+  
+   function go(){
+    if(parseInt(list1.style.left) > newleft1){
+      list1.style.left = parseInt(list1.style.left) +speed +'px';
+      setTimeout(go,10);
+    }
+     else{
+      list1.style.left=newleft1+"px";
+      if(newleft1 <-5760)
+      list1.style.left = 0 + 'px';
+      if(newleft1 =0)
+      list1.style.left = -5760 +'px';
+      // console.log(list1.style.left);
+    // alert("hahha")
+     }
+   }
+   go();
+ }
+  setInterval(function(){
+      setting();
+    },3000);
+   function play(){
+    timer = setInterval(function(){
+      setting1(-window.screen.width)
+      if(index>3){
+        index=1;
+      }
+      else{index=index+1;}
+      Show();
+    },3000);
+   }
+    function stop(){
+    clearTimeout(timer);
+  }
+ for(var i=0;i<buttons.length;i++){
+     buttons[i].onclick=function(){
+       console.log(i);
+       if(this.className == "on") return;
+       var myIndex =parseInt(this.getAttribute('index'));
+       var obj = -window.screen.width*(myIndex-index);
+       setting1(obj);
+       index = myIndex;
+       Show();
+       }
+   }
+   container1.onmouseover =stop;
+   container1.onmouseout = play;
+   play();
+
+}  /*郭凯璐*/
+    var img=document.getElementsByName('sublist')
+        var hide=document.getElementById('hide');
+        img[0].onmousedown=function(){
+                daohang()
+            }
+            img[1].onmousedown=function(){
+                daohang()
+            }
+            img[2].onmousedown=function(){
+                daohang()
+            }
+            function daohang(){
+                if(hide.style.display=="block"){
+                    hide.style.display="none";
+                }
+                else hide.style.display="block";
+            }/*袁心如*/
+  </script>
+</body>
+</html>

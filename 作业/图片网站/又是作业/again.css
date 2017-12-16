@@ -1,0 +1,572 @@
+.container{
+	width: 1280px;
+}
+.head{
+	height: 55px;
+	background-color: rgb(33,137,190);
+	width: 100%; 
+	position: relative;
+}
+.head .img1{
+    position:absolute;
+    left: 50px;
+    top: 10px;
+}
+.head .img2{
+	position: absolute;
+	right: 130px;
+	top: 20px;
+}
+.head input{
+	width: 290px;
+	background-color: white;
+	border-radius: 10px;
+	border: 1px solid transparent;
+	position: absolute;
+	right: 170px;
+	top: 20px;
+	background-image: url(./images./hd-search-ico.png);
+	background-repeat: no-repeat;
+	background-position: 3px 0px;
+	padding-left: 20px;
+}
+.head h3{
+	font-size: 10px;
+	position: absolute;
+	top: 20px;
+	right: 100px;
+	color: white;
+	cursor: pointer;
+}
+.left{
+	width: 261px;
+	float: left;
+}
+.right{
+	float: right;
+	width: 70%;
+}
+.leftone{
+	width: 100%;
+	height: 150px;
+	background-color: rgb(43,46,61);
+}
+.onetop{
+	height: 90px;
+	width: 100%;
+	position: relative;
+}
+.leftone .onetop .img1{
+	position: absolute;
+	left: 50px;
+	top: 20px;
+}
+.leftone .onetop .img2{
+    position: absolute;
+    left: 56px;
+    top: 25px;
+}
+.leftone .onetop h3{
+	position: absolute;font-size: 15px;
+	top: 40px;
+	left: 120px;
+	color: white;
+}
+.onedown{
+	height: 60px;
+}
+.onedown .center{
+	width: 171px;
+	height: 30px;
+	margin: auto;
+
+}
+.collect{
+	width: 85px;
+	height: 30px;
+	float: left;
+	border-right: 1px solid rgb(87,100,117);
+}
+.fans{
+	width: 85px;
+	height: 30px;
+	float: right;
+}
+.onedown .center div h2{
+	font-size: 12px;
+	color: rgb(87,100,117);
+    text-align: center;
+}
+.onedown .center div h3{
+	font-size: 12px;
+	color: rgb(87,100,117);
+    text-align: center;
+    cursor: pointer;
+}
+.lefttwo{
+	height: 190px;
+	background-color: rgb(56,62,78);
+}
+.table{
+	height: 40px;
+	position: relative;
+}
+.table img{
+    position: absolute;
+    left: 30px;
+    top: 10px;
+}
+.table h2{
+	position: absolute;
+	font-size: 10px;
+	color: white;
+	left: 60px;
+	top: 10px;
+}
+.lefttwo ul{
+	height: 150px;
+}
+.one{
+	height: 30px;
+	position: relative;
+}
+.two{
+	height: 90px;
+	position: relative;
+}
+.three{
+	height: 30px;
+	position: relative;
+}
+.lefttwo ul li .img1{
+	position: absolute;
+	left: 60px;
+	/*width: 7px;*/
+}
+.lefttwo ul li img{
+	position: absolute;
+	left: 80px;
+}
+.lefttwo ul li h2{
+	color: white;
+	font-size: 12px;
+	position: absolute;
+	left: 100px;
+}
+.lefttwo ul .two ul{
+	position: relative;
+	top: 30px;
+	height: 60px;
+}
+.lefttwo ul .two ul li{
+	height: 30px;
+}
+.lefttwo ul .two ul li img{
+	position: absolute;
+	left: 100px;
+}
+.lefttwo ul .two ul li h2{
+	position: absolute;
+	left: 120px;
+}
+.leftthree{
+	height: 867px;
+	background-color: rgb(43,46,61);
+}
+.leftthree ul{
+	height: 250px;
+}
+.leftthree ul li{
+	height: 50px;
+	position: relative;
+}
+/*.leftthree ul li:hover{
+	background-color: rgb(56,62,78);
+}*/
+.leftthree ul li img{
+   position: absolute;
+   left: 30px;
+   top: 10px;
+}
+.leftthree ul li h3{
+	position: absolute;
+	left: 60px;
+	top: 10px;
+	color: rgb(100,125,150);
+	font-size: 10px;
+	cursor: pointer;
+}
+.right{
+	width: 1019px;
+}
+.c{
+	height: 30px;
+	background-color: white;
+	position: relative;
+}
+.c ul{
+	width: 220px;
+	clear: both;
+	position: absolute;
+	left: 20px;
+	top: 6px;
+}
+.c ul li {
+	float: left;
+	letter-spacing: 3px;
+	font-size: 10px;
+	color: rgb(182,182,182);
+}
+.right .context{
+	height: 1177px;
+	background-color:rgb(238,238,238);
+}
+.right .context .center{
+	width: 890px;
+	margin: auto;
+}
+.right .context .center .none{
+	height: 20px;
+	background-color: rgb(238,238,238);
+}
+.right .context .center .check{
+	height: 85px;
+	background-color: white;
+	box-shadow: 0px 0px 2px rgb(174,174,174);
+}
+.check .one{
+	width: 185px;
+	height: 100%;
+	position: relative;
+	float: left;
+}
+.check .one h2{
+	color: rgb(170,170,170);
+	font-size: 9px;
+	width: 60px;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+.check .one div{
+	border: 1px solid rgb(170,170,170);
+	width: 68px;
+	height:20px;
+	clear: both;
+	position: absolute;
+	top: 19px;
+	left: 70px;
+}
+.check .one div h3{
+	color:black;
+	font-size: 11px;
+	float: left;
+	position: absolute;
+	left: 6px;
+	top: 2px;
+}
+.check .one div img{
+	float: right;
+	position: absolute;
+	right: 9px;
+	top: 8px;
+	cursor: pointer;
+}
+.check .two{
+	width:200px;
+	float: left;
+	position: relative;
+}
+.check .two ul{
+    position: absolute;
+    top: 19px;
+}
+.check .two ul li{
+	width: 165px;
+	height: 30px;
+	position: relative;
+}
+.check .two ul li h3{
+	color: rgb(170,170,170);
+	font-size: 9px; 
+	float: left;
+	position: absolute;
+	top: 2px;
+}
+.check .two ul li div{
+    width:120px;
+    border: 1px solid rgb(170,170,170);
+    height: 20px;
+    float: right;
+    position: relative;
+}
+.check .two ul li div h4{
+	font-size: 11px;
+	color: black;
+	position: absolute;left: 5px;
+	top: 2px;
+}
+.check .two ul li div img{
+	position: absolute;
+	left: 100px;
+	top: 8px;
+	cursor: pointer;
+}
+.check .two img{
+	position: absolute;
+	top: 26px;
+	left: 167px;
+	cursor: pointer;
+}
+.check .three{
+	width: 320px;
+	height: 100%;
+	float: left;
+	position: relative;
+}
+.check .three h2{
+	font-size: 9px;
+	color: rgb(170,170,170);
+}
+.date{
+	position: absolute;
+	top: 22px;
+	left: 10px;
+}
+.date2{
+	width: 120px;
+	height: 20px;
+	position: absolute;
+	left: 51px;
+	top:20px;
+	border: 1px solid rgb(170,170,170);
+}
+.time{
+	position: absolute;
+	top: 52px;
+	left: 10px;
+}
+.time2{
+	width: 70px;
+	height: 20px;
+	position: absolute;
+	left: 51px;
+	top:50px;
+	border: 1px solid rgb(170,170,170);
+}
+.num{
+	position: absolute;
+	right: 88px;
+	top: 22px;
+}
+.num2{
+	width: 70px;
+	height: 20px;
+	position:absolute;
+	right: 0px;
+	top: 20px;
+	border: 1px solid rgb(170,170,170);
+}
+.deal{
+	position: absolute;
+	right: 138px;
+	top: 52px;
+}
+.deal2{
+	width: 120px;
+	height: 20px;
+	position: absolute;
+	right: 0px;
+	top: 50px;
+	border: 1px solid rgb(170,170,170);
+}
+.check .three div h3{
+	font-size: 11px;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+}
+.check .three div img{
+	position: absolute;
+	right: 6px;
+	top: 8px;
+	cursor: pointer;
+}
+.check .four{
+	float: right;
+	width: 185px;
+    position: relative;
+}
+.check .four div{
+	width: 50px;
+	height: 25px;
+	background-color: rgb(57,138,192);
+    line-height: 25px;
+	color: white;
+	text-align: center;
+	font-size: 11px;
+	position: relative;
+	left: 20px;
+	top: 30px;
+	cursor: pointer;
+	border-radius: 3px;
+}
+.money{
+	height: 65px;
+	margin-top: 10px;
+	position: relative;
+}
+.money .row{
+	width: 30px;
+	height: 65px;
+    position: relative;
+    background-color: white;
+    box-shadow: 0px 0px 2px rgb(174,174,174);
+}
+.money .right{
+	position: absolute;
+	right: 135px;
+}
+.money .row img{
+   position: absolute;
+   cursor: pointer;
+   left: 12px;
+   top:25px;
+}
+.money ul{
+   width: 690px;
+   position: absolute;
+   left: 35px;
+}
+.money ul li{
+	width: 110px;
+	background-color: white;
+	height: 65px;
+	float: left;
+	position: relative;
+	margin-right: 5px;
+	box-shadow: 0px 0px 2px rgb(174,174,174);
+}
+.money ul li:hover{
+	height: 62px;
+	cursor: pointer;
+	border-top: 3px solid rgb(67,136,201)
+}
+.money ul li h2{
+	color: black;
+	font-size: 5px;
+	position: absolute;
+	bottom: 38px;
+	left: 21px;
+}
+.money ul li h3{
+	color: black;
+	font-size: 3px;
+	position: absolute;
+	bottom: 38px;
+	left: 63px;
+}
+.money ul li h4{
+	font-size: 16px;
+	position:absolute;
+	bottom: 10px;
+	left: 22px;
+	color: rgb(174,174,174);
+}
+.money ul li h5{
+	font-size: 20px;
+	color: rgb(237,101,0);
+	position: absolute;
+	bottom: 10px;
+	left: 37px;
+}
+.history{
+	width: 130px;
+	float: right;
+	background-color: white;
+	height: 65px;
+	position: relative;
+	box-shadow: 0px 0px 2px rgb(174,174,174);
+}
+.history img{
+	position: absolute;
+	left: 10px;
+	top: 17px;
+}
+.history h2{
+	line-height: 65px;
+	position: absolute;
+	left: 50px;
+	font-size: 11px;
+}
+.sum{
+	height: 40px;
+	position: relative;
+}
+.sum h2{
+	position: absolute;
+	left: 0px;
+	bottom: 3px;
+	font-size: 10px;
+}
+.color{
+	height: 70px;
+}
+.color ul{
+    width: 100%;
+    height: 70px;
+}
+.color ul li{
+	width: 197px;
+	height: 70px;
+	float: left;
+	margin-right: 30px;
+	position: relative;
+	background-color: white;
+	box-shadow: 0px 0px 2px rgb(174,174,174);
+}
+.color ul .one{
+	border-left: 3px solid rgb(67,178,159);
+}
+.color ul .one div{
+	background-color: rgb(67,178,159);
+}
+.color ul .two{
+	border-left: 3px solid rgb(57,138,193);
+}
+.color ul .two div{
+	background-color:  rgb(57,138,193);
+}
+.color ul .three{
+	border-left: 3px solid rgb(208,76,55);
+}
+.color ul .three div{
+	background-color: rgb(208,76,55);
+}
+.color ul .four{
+	margin-right:0px;
+	border-left: 3px solid rgb(225,205,70);
+}
+.color ul .four div{
+	background-color: rgb(225,205,70);
+}
+.color ul li div{
+	width: 60px;
+	height: 45px;
+	position: absolute;
+	right: 20px;
+	top: 13px;
+}
+.color ul li h2{
+	position: absolute;
+	left: 20px;
+	top: 17px;
+	font-size: 7px;
+}
+.color ul li h3{
+	position: absolute;
+	left: 20px;
+	top: 40px;
+	font-size: 3px;
+	color: rgb(174,174,174);
+}

@@ -1,0 +1,812 @@
+@media screen and (min-width:314px) and (max-width:767px){
+*{
+	padding: 0px;
+	margin: 0px;
+}
+.container{
+	width: 100%;
+}
+.welcome{
+	width: 100%;
+	height: auto;
+	position: relative;
+	background-image: url(../images/homepage-hero.image.large_2x.jpg);
+	background-repeat: no-repeat;
+	background-position: 60% -190px;
+    background-size: 1600px 600px;
+	
+}
+.equal{
+	display: inline;
+	font-size: 30px;
+	color: white;
+	cursor: pointer;
+	position: absolute;
+	top: 6px;
+
+}
+.header{
+	height: 48px;
+	width:100%;
+	position: relative;
+}
+.headerul ul{
+	margin: auto;
+	width: 100%;
+}
+.headerul li{
+	display: none;
+	width: 130px;
+	float: left;
+	line-height: 45px;
+	text-align: center;
+	font-size: 14px;
+}
+.headerul span{
+	color: white;
+}
+.headerul span:hover{
+	color: grey;
+	cursor: pointer;
+	text-decoration: none;
+}
+.headerul{
+	margin: 0px auto;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.smallappleborder{
+	width: 28px;
+	height: 20px;
+	position: absolute;
+	top: 16px;
+	left: 47%;
+	overflow: hidden;	
+}
+
+.smallapple:hover{
+	opacity: 0.65
+}
+
+.search:hover{
+	opacity: 0.65;
+}
+
+.whitebag:hover{
+    opacity: 0.65
+}
+.subhead{
+	width:100%;
+	height: 610px;
+	margin: auto;
+	position: relative;
+}
+.subheadhead{
+   height: 8%;
+   width: 100%;
+   position: relative;
+   background-image: url(../images/p.png);
+   background-repeat: no-repeat;
+   background-size: 30px;
+   background-position: 
+}
+.support{ 
+   font-size: 18px;
+   color: white;
+   position: absolute;
+   left: 7px;
+   top: 14px;
+}
+.subheadhead a{
+   display: none;
+   width:50px; 
+   font-size: 2px;
+   color: white;
+   cursor: pointer;
+}
+.subheadhead a:hover{
+	text-decoration: none;
+	color: blue;
+	cursor: pointer;
+}
+.group{
+	display: none;
+	position: absolute;
+	top:40%;
+	left:90%;
+}
+.link{
+	display: none;
+	position: absolute;
+	top: 40%;
+	left:95%;
+	display: none;
+}
+.cb{
+	color: white;
+	font-size: 18px;
+	position: absolute;
+	right: 10px;
+}
+.subheaddown{
+	height: 230px;
+	width: 100%;
+	position: absolute;
+	top: 356px;
+}
+h1{
+	position:static;
+	text-align: center;
+	padding: 20px;
+	font-size:26px;
+    color: black;
+    letter-spacing: 2px;
+}
+.subheaddown p{
+	font-size: 18px;
+	position: static;
+	margin-top: 10px;
+	text-align: center;
+	color: black;
+}
+.input{
+	width: 76%;
+	height: 15%;
+	position: absolute;
+	top:60%;
+	left: 12%;
+	font-size: 19px;
+	background-image: url(../images/search_icon_black.svg);
+	background-repeat: no-repeat;
+	background-size: 18px 18px;
+	background-position: 5px 9px;
+	display: block;
+	border:1px solid grey!important;
+}
+.know{
+	height: 650px;
+	width: 100%;
+	position: relative;
+}
+.know h2{
+	font-size: 25px;
+    position: static;
+    text-align: center;
+    color: black;
+    letter-spacing: 3px;
+}
+.know ul{
+	width: 100%;
+	height: auto;
+	margin: auto;
+	position: relative;
+	top:50px;
+	display: block;
+}
+.know ul li{
+	width: 50%;
+	height: 183px;
+	display: block;
+	float: left;
+	margin-right:0px;
+	position: relative;
+}
+.iPad{
+	clear: both;
+}
+.apple id{
+	clear: both;
+}
+.know ul .itunes{
+	margin-right: 0px;
+}
+.know ul li img{
+	height: 65px;
+	width: 65px;
+	position:static;
+	display: block;
+	margin: auto;
+	padding-top: 40px;
+}
+.know ul li p{
+	font-size: 15px;
+	text-align: center;
+	color: black;
+    position: relative;
+	top: 20%
+}
+.know ul li:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+.unfold{
+	text-align: center;
+	height: 70px;
+	line-height: 70px;
+	color: rgb(39,118,152);
+	font-size: 15px;
+}
+.unfold span:hover{
+	cursor: pointer;
+}
+.news{
+	height: 610px;
+	width: 100%;
+	position: relative;
+}
+.newscenter{
+	width:95%;
+	margin: auto;
+}
+.newsup{
+	width:100%;
+	height: 365px;
+	position: relative; 
+}
+.newsup h2{
+	font-size: 25px;
+	letter-spacing: 2px;
+	color: black;
+	position: relative;
+	top: 40px;
+	text-align: center;
+}
+.newsup p{
+	position: relative;
+	top: 60px;
+	text-align: center;
+	font-size: 18px;
+	line-height: 35px;
+}
+.newscenter img{
+	width: 95%;
+	max-width: 370px;
+	height: auto;
+	float: none;
+	margin: auto;
+	display: block;
+	position: static;
+}
+.newscenter span{text-align: center;}
+.newsup h3{
+	font-size: 19px;
+	color: rgb(39,118,152);
+	position: relative;
+	top: 90px;
+	text-align: center;
+}
+.newsup h3:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+.newsup h4{
+	font-size: 19px;
+	color: rgb(39,118,152);
+	position: relative;
+	top: 110px;
+	text-align: center;
+}
+.newsup h4:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+.service{
+	width: 100%;
+	height: auto;
+}
+.servicecenter{
+	width: 100%;
+	height: 100%;
+	margin:auto;
+}
+.servicetop{
+	height: 780px;
+}
+.learn{
+	width: 100%;
+	height: auto;
+	float: none;
+	position: relative;
+	margin: auto;
+}
+.fix{
+	width: 100%;
+	height: auto;
+	float: none;
+	position: relative;
+	margin: auto;
+}
+.learn img{
+	width: 200px;
+	height: auto;
+	position: static;
+	padding-top: 30px;
+	display: block;
+	margin: auto;
+	float:none; 
+}
+.learntext{
+	width: 95%;
+	height: 140px;
+	position: relative;
+	top: 0px;
+    margin:40px auto 0px auto;
+	float: none;
+}
+.fixtext{
+	width: 95%;
+	height: 140px;
+	position: relative;
+	top: 0px;
+	margin:40px auto 0px auto;
+	float: none;
+}
+.learn h2{
+	font-size: 28px;
+	position: static;
+	color: black;
+}
+.learn span{
+	color: rgb(39,118,152);
+}
+.learn span:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+.learn p{
+	font-size: 15px;
+	color: black;
+	position: static;
+	margin-top: 30px;
+	line-height: 25px;
+}
+.learn h3{
+	font-size: 15px;
+	color: rgb(39,118,152);
+	position: static;
+	margin-top: 10px;
+}
+.learn h3:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+.fix img{
+	width: 200px;
+	height: auto;
+	position: static;
+	padding-top: 30px;
+	display: block;
+	margin:20px auto 0px auto;
+	float: none;
+}
+.fix h2{
+	font-size: 28px;
+	position: static;
+	color: black;
+}
+.fix p{
+	font-size: 15px;
+	color: black;
+	position: static;
+	margin-top: 30px;
+	line-height: 25px;
+}
+.fix h3{
+	font-size: 15px;
+	color: rgb(39,118,152);
+	position: static;
+	margin-top: 17px;
+}
+.fix h3:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+.care{
+	width: 100%;
+	height:;
+}
+.servicedown{
+	position: relative;
+}
+.servicedown h2{
+	font-size: 21px;
+	letter-spacing: 2px;
+	color: black;
+	position: static;
+	padding-top: 20px;
+	color: black;
+	text-align: center;
+}
+.servicedowncenter{
+	width: 95%;
+	margin: auto;
+}
+.servicedowncenter  .first{
+	text-align: center;
+	font-size: 17px;
+	color: black;
+	position:static;
+	margin-top: 20px;
+
+}
+.servicedowncenter span{
+	color: rgb(39,118,152);
+}
+.servicedowncenter span:hover{
+	cursor: pointer;
+	text-decoration: underline;
+}
+.servicedowncenter  .second{
+	text-align: center;
+	font-size: 17px;
+	color: black;
+	position: static;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.join{
+	height: 550px;
+	width: 100%;
+	background-image: url(../images/today-at-apple-workshop-banner.image.small_2x.jpg);
+    background-repeat: no-repeat;
+    background-size:700px 320px;
+    background-position: 50% 0px;
+    position: relative;
+}
+.joinus{
+	width: 90%;
+	height: auto;
+    position: absolute;
+    left:5%;
+    top:360px;
+}
+/*有错误*/
+.joinus div h2{
+	font-size: 25px;
+	color: black;
+	text-align: left;
+	letter-spacing: 2px;
+}
+.joinus div{
+	width: 100%;
+	height: auto;
+}
+.joinus p{
+	font-size: 15px;
+	color: black;
+    line-height: 24px;
+    margin-top: 15px;
+}
+.joinus h3{
+	color: rgb(39,118,152);
+	font-size: 15px;
+	margin-top: 15px;
+	display: inline;
+}
+.joinus h3:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+.communicate{
+	height: auto;
+	width: 100%;
+}
+.communicatecenter{
+	width: 100%;
+	height: auto;
+	margin: auto;
+}
+.comleft{
+	float: none;
+	width: 100%;
+	height:auto;
+}
+.comleft img{
+	width: 95%;
+	max-width: 300px;
+	height: auto;
+    position: static;
+    float: none;
+    display: block;
+    margin: auto;
+    padding-top: 40px;
+}
+.comright{
+	float: none;
+	width: 100%;
+	height: auto;
+}
+.comright img{
+	width: 95%;
+	height: auto;
+	max-width: 300px;
+	position:static;
+	float: none;
+	display: block;
+	margin:auto;
+	margin-top: 40px;
+}
+.comlefttext{
+	width: 95%;
+	margin:20px auto 0px auto;
+	height: auto;
+	position:static;
+	float: none;
+}
+.comrighttext{
+	width: 95%;
+	height: auto;
+	position: static;
+	float: none;
+	margin:20px auto 0px auto;
+}
+.communicatecenter div div h2{
+	font-size: 23px;
+	color: black;
+	position: static;
+}
+.communicatecenter div div p{
+	font-size: 18px;
+	color: black;
+	position: static;
+	line-height: 30px;
+	margin-top: 20px;
+	margin-bottom: 90px;
+}
+.communicatecenter div div h3{
+	font-size: 18px;
+	color: rgb(39,118,152);
+	position: relative;
+	top:-50px;
+}
+.communicatecenter div div h3:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+.information{
+	width: 100%;
+	height:auto;
+}
+.center{
+	width: 100%;
+	height: 100%;
+	margin: auto;
+}
+.protect{
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+.protect div{
+	width:90% ;
+	height: auto;
+	margin: auto;
+    position: static;
+}
+.protect img{
+	display: none;
+	width: 150px;
+	position: absolute;
+	left: 68%;
+	top:50px;
+}
+.protect div h2{
+   font-size: 23px;
+	color: black;
+	margin-top: 30px;
+}
+.protect div  p{
+	font-size: 17px;
+	color: black;
+	position: static;
+	margin-top: 20px;
+	margin-bottom: 90px;
+}
+.protect div h3{
+	font-size: 18px;
+	color: rgb(39,118,152);
+	display: inline;
+	position:relative;
+	top: -50px;
+}
+.protect div h3:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+.after{
+	height:auto;
+	width: 100%;
+}
+.after h2{
+	font-size: 21px;
+	text-align: center;
+	position: static;
+	padding-top: 40px;
+	margin-bottom: 90px;
+	color:black; 
+}
+.after h3{
+	font-size: 17px;
+	color: rgb(39,118,152);
+	position: relative;
+	top: -50px;
+	margin-left: 30%
+}
+.after h3:hover{
+	cursor: pointer;
+	text-decoration: underline;
+}
+.close{
+	width: 100%;
+	height:auto;
+}
+.close h2{
+	font-size: 25px;
+	color: black;
+	text-align: center;
+	position: static;
+	margin-top: 35px;
+	margin-bottom: 90px;
+}
+.close h3{
+	font-size: 18px;
+	display: inline;
+	position: relative;
+	top: -40px;
+	margin-left: 40%;
+	color: rgb(39,118,152);
+}
+.close h3:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+.change{
+	width: 100%;
+	height: auto;
+}
+.change h2{
+	font-size: 21px;
+	color: black;
+	position: static;
+	padding-top: 40px;
+	text-align: center;
+}
+/*.change ul li{
+	font-size: 16px;
+	color: rgb(39,118,152); 
+	margin:auto;
+	text-align: center;
+	margin-top: 17px;
+	width:85%;
+}*/
+.change ul{
+	position:static;
+	margin-top: 40px;
+}
+/*.change ul li a:hover{
+	cursor: pointer;
+	text-decoration: underline;
+}*/
+.foot{
+	height: auto;
+	width: 100%;
+	background-color: rgb(244,244,244);
+}
+.footcenter{
+	width: 95%;
+	height: 100%;
+	margin:auto;
+	border:1px solid transparent;
+}
+.foothead{
+	margin-top: 22px;
+	height: 18px;
+    position: relative;
+    overflow: hidden;
+}
+.greyapple:hover{
+	position: relative;
+	bottom: 17.9px;
+	cursor: pointer;
+}
+.big{
+	position: relative;
+	left: 10px;
+	bottom: 18px;
+}
+.foothead p{
+	font-size:10px;
+	position: absolute;
+	left: 50px;
+	top:2px; 
+}
+.fourmenu{
+	height: auto;
+	width: 100%;
+	margin-top: 5px;
+}
+.fourmenu div{
+	width: 100%;
+	float: none;
+}
+.fourmenu div h4{
+	width: 100%;
+	font-size: 10px;
+	color: black;
+	line-height: 40px;
+	border-bottom: 1px solid grey;
+}
+.fourmenu div h4:hover{
+	cursor: pointer;
+}
+.fourmenu div h4 span{
+	display: inline;
+	float: right;
+}
+.fourmenu div ul li{
+	display: none;
+    font-size: 2px;
+    margin-top: 8px;
+}
+.fourmenu div ul li:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+.footcenter p{
+	font-size: 10px;
+	margin-bottom: 7px;
+}
+.footcenter p span{
+	color: rgb(39,118,152); 
+}
+.footcenter p span:hover{
+	cursor: pointer;
+	text-decoration: underline;
+}
+.Copyright{
+	height: 80px;
+	margin-top:5px;
+}
+.Copyright p{
+	float: left;
+	clear: left;
+	font-size: 10px;
+}
+.Copyright ul li{
+	font-size: 10px;
+	float: left;
+    width: auto;
+	margin-left: 0px;
+	padding-right: 10px;
+	margin-left:10px;
+	border-right: 1px solid grey;
+	text-align: center;
+}
+.Copyright ul{
+	clear: left;
+}
+.Copyright ul li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.Copyright ul span{
+	display: block;
+	height: 3px;
+	width: 2px;
+	float: left;
+}
+.Copyright h6{
+	font-size: 10px;
+	float: left;
+}
+.Copyright img{
+    width: 15px;
+	height: auto;
+	float: left;
+	display: block;
+}
+.last{
+	display: none;
+}
+}
